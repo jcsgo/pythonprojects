@@ -1,0 +1,88 @@
+---
+title: "YuDa AI Day 1"
+output: html_notebook
+author: "John Go"
+date: "2018-04-14"
+---
+
+# Introduction
+
+### How to become a good data scientist?
+- Merge between math / tech / business strategy
+
+### Method and skills you need
+1. identify problem (biz skills - need to understand company, all their pain points) 
+2. collect data (data infrastructure - needs a little more technical skills + software engineering skills)
+3. prepare and analyze (data tools and analysis)
+4. apply insights (communicate data, story telling skills, data visualization skills)
+
+## Difference between Data Analyst with Data science
+- structured (eg traditional datasets) vs unstructured data (eg images)
+- descriptive focus (what happened in the past) vs predictive analysis (what will happen in the future)
+- (excel, sql, tableau, python) vs (staatistics, ML, computer vision, natural language, processing, AI tech)
+
+# Machine Learning 101
+
+### What is ML?
+Field of study to learn rules from data without being explicitly being programmed (not hardcoded)
+Automatically adapted to situation changes
+Use past to predict future
+
+`Deep Learning is subset of ML which is a subset of AI`
+
+Example: Deep Blue (Turbo charged expert system) vs AlphaGo (Learn from each game)
+
+### How to identify an apple as opposed to orange?
+- colours (red vs orange)
+- if image is B/W, maybe shape?
+- if identify apple from banana? 
+Rule based method can easily break the code and render it useless!
+(Actually, if new images/situations are not part of the training data, ML can be useless too?)
+
+### Data and Problem. Example - IRIS dataset
+- What is the data?
+- automatically identify the type of iris flowers
+
+### ML Problems
+1. Supervised Learning 
+- Classification (is this A or B?)
+- Regression
+- Learning to rank
+2. Unsupervised Learning
+- Clustering (How is this organized? eg. Creating user segments, different groups will have different treatment)
+- Dimension Reduction - using low dimensional vector to represent high dimension data
+
+### Data Problem - Flow Chart to know what to do?
+1. Is your data labelled? If yes, supervised. If unlabelled, unsupervised.
+2. Categorize, rank, continuous value --> regression
+3. If unsupervised, clustering if you want to find sub-segments, or compress data or data visualization?
+
+Examples:
+Spam Email Detection? (Answer: Classification - label is spam or not)
+Predict how many units consumers will purchase next month? (Answer: regression)
+Predicting what is the number on handwriting letters - if you don't have the label of numbers, then it is clustering problem.
+
+### Machine Learning Algorithms
+Classification (eg. kNN, SVM, Logistic Regression)
+Regression (eg. Nearest Neighbour)
+Clustering (eg. k-Means)
+
+# The Pipeline of Machine Learning
+
+1. Install anaconda
+
+2. Pipeline of ML
+- data collection
+- data cleaning and pre-processing
+- model selection and training
+- model testing, and if not good, go back to model selection and training
+- model deployment and integration
+
+Note: Ensemble Learning
+- combine different models together
+
+Note: Important to Well-Document Solution
+- to communicate others to use your model
+
+
+
