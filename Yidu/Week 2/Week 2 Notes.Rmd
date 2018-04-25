@@ -1,0 +1,73 @@
+---
+title: "YiDu AI Weel Week 2"
+output: html_notebook
+---
+
+# Yidu AI Housing Prediction HW
+* extracted out 6 digits --> first 2 digits represent subregion in Singapore
+* numerical categorical conversion --> month is given as string
+* handling skewness of the resale price
+* random forest, xgboost performed the best
+ 
+
+
+# Regression and Model Fitting (Huang Wen Jie)
+
+### Lineary Regression
+* Regression algorithms --> will have:
+** traiing set, learning algorithm, (x,y) and h --> h is hypothesis
+** this is also known as functino h(x). 
+** regression is to define a `least cost function` and find the theta (weights) to minimize the cost
+* the least cost function --> is: (h(x)-y)**2 --> this is not 'Eucledian Distance'. This may be another issue
+
+### Logistic Regression
+* y is binary. 
+* h(x) = 1/(1+exp(-Theta**T*x))
+* If you study nnet, this is very common
+* it is actually fitting a probabiility
+
+### Model Fitting
+* lots of math! 
+* finding the least squares in Linear regression
+* J is a convex quadratic equation
+
+### Batch Gradient Descent
+* compute the gradient on each example of each of training set
+
+### Stochastic Gradient Descent
+* Stochastic is random
+* Batch Gradient has very high computation cost
+* alpha is the step size
+
+### Batch vs Stochastic? How can we select the better algorithm
+* In industry, stochastic is preferred. eg. predicting optimum order for inventory from sales data. We don't have all sales data at once, sales data comes once at a time. Therefore, stochastic is preferred.
+
+### Fitting
+* `Underfitting` - model is too simple. Strucutre did not capture the relationship of the data to the model
+** Increase model complexity by adding more features
+* `Overfitting` - contains too much parameters that can be justified by data
+** Advice: add more training data, regularize, cross-validate
+
+### Regularization
+* adding regularization term into the loss function
+* adding lambda*R(0) into the equation 0 is theta.
+* Ridge, Lasso
+* lambda contains the imporance of regularization
+* lambda 'fights' with the original training model
+* Lasso can have a lot of zero inputs
+* 
+
+## Questions
+* Is overfitting that bad?
+* Autocorrelation?
+
+# `Best thing is to learn by doing real life project - learn things that you will use`
+# `Move forward confidently`
+
+
+# Cross-Validation
+* validation set approach
+leave one out cross validation
+k fold cross validation
+
+# f1 score? related to type one error?
